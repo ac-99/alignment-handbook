@@ -45,6 +45,7 @@ pip install wandb
 
 # Install specific version of Torch
 pip3 install torch==2.1.2
+pip install cuda==11.0
 
 # Set environment variables
 export PYTORCH_CUDA_ALLOC_CONF="max_split_size_mb:256"
