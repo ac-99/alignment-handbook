@@ -14,7 +14,7 @@ dataset_splits:
 preprocessing_num_workers: 12
 
 # SFT trainer config
-bf16: true
+bf16: false
 dataset_kwargs:
   add_special_tokens: false  # We already wrap <bos> and <eos> in the chat template
   append_concat_token: false # No need to add <eos> across samples

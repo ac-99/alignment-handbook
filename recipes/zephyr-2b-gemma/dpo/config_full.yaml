@@ -12,7 +12,7 @@ dataset_splits:
 preprocessing_num_workers: 12
 
 # DPOTrainer arguments
-bf16: true
+bf16: false
 beta: 0.05
 do_eval: true
 evaluation_strategy: steps
