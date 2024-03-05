@@ -15,6 +15,8 @@ pip3 install torch==2.1.2
 # Install the Alignment Handbook package
 python -m pip install .
 
+pip install wheel
+
 # Install Flash-Attn library without build isolation
 python -m pip install flash-attn==2.3.6 --no-build-isolation
 
