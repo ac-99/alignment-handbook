@@ -23,22 +23,11 @@ python -m pip install flash-attn==2.3.6 --no-build-isolation
 # Login to the Hugging Face Hub
 python -c "from huggingface_hub import login; login()"
 
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.sh | sudo bash
 
-yum install -y amazon-linux-extras
-
-# Install epel-release from Extras Library
-echo "Installing epel-release..."
-amazon-linux-extras install epel -y 
-
-# Enable epel repository
-echo "Enabling epel repository..."
-yum-config-manager --enable epel
-
-# Install git-lfs
-echo "Installing git-lfs..."
 yum install git-lfs -y
 
-echo "git-lfs installation completed."
+git lfs install
 
 # Install Weights & Biases library
 pip install wandb
