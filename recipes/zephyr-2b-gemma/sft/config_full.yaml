@@ -20,7 +20,7 @@ dataset_kwargs:
   append_concat_token: false # No need to add <eos> across samples
 do_eval: true
 evaluation_strategy: epoch
-gradient_accumulation_steps: 4
+gradient_accumulation_steps: 8
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
   use_reentrant: false
@@ -37,12 +37,11 @@ num_train_epochs: 3
 output_dir: data/zephyr-2b-gemma-sft
 overwrite_output_dir: true
 per_device_eval_batch_size: 4
-per_device_train_batch_size: 4
+per_device_train_batch_size: 2
 push_to_hub: true
 remove_unused_columns: true
 report_to:
-- tensorboard
-- wandb
+- none
 save_strategy: "no"
 seed: 42
 warmup_ratio: 0.1
