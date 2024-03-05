@@ -2,7 +2,7 @@
 model_name_or_path: google/gemma-2b
 model_revision: main
 tokenizer_name_or_path: philschmid/gemma-tokenizer-chatml # Custom tokenizer with <|im_start|> and <|im_end|> tokens
-torch_dtype: float16
+torch_dtype: fp16
 use_flash_attention_2: true
 
 # Data training arguments
