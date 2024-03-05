@@ -8,7 +8,7 @@
 pip3 install torch==2.1.2
 
 # Install the Alignment Handbook package
-python -m pip install alignment-handbook
+python -m pip install .
 
 # Install Flash-Attn library without build isolation
 python -m pip install flash-attn==2.3.6 --no-build-isolation
@@ -17,19 +17,7 @@ python -m pip install flash-attn==2.3.6 --no-build-isolation
 python -c "from huggingface_hub import login; login()"
 
 # Install git-lfs for managing large files
-apt-get install git-lfs
-
-# List available branches in the repository
-git branch -a
-
-# Switch to a specific branch
-git switch model/gemma-2b
-
-# Pull the latest changes from the selected branch
-git pull
-
-# List current branches
-git branch
+yum install git-lfs
 
 # Install Weights & Biases library
 pip install wandb
