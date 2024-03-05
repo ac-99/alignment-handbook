@@ -4,9 +4,6 @@
 
 # Setup Environment
 
-# Clone the Alignment Handbook repository from GitHub
-git clone https://github.com/ac-99/alignment-handbook.git
-
 # Install specific version of Torch
 pip3 install torch==2.1.2
 
@@ -20,7 +17,7 @@ python -m pip install flash-attn==2.3.6 --no-build-isolation
 python -c "from huggingface_hub import login; login()"
 
 # Install git-lfs for managing large files
-sudo apt-get install git-lfs
+apt-get install git-lfs
 
 # List available branches in the repository
 git branch -a
