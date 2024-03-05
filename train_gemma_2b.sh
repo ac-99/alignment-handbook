@@ -23,11 +23,23 @@ python -m pip install flash-attn==2.3.6 --no-build-isolation
 # Login to the Hugging Face Hub
 python -c "from huggingface_hub import login; login()"
 
-curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.sh | sudo bash
 
-yum install git-lfs -y
+# Step 1: Update Amazon Linux 2
+sudo yum update -y
 
-git lfs install
+# Step 2: Install the amazon-Linux-extras package
+sudo yum install -y amazon-linux-extras
+
+# Step 3: Enable EPEL Repository
+sudo amazon-linux-extras install epel -y
+sudo yum update -y
+
+# Step 4: Installing git LFS in Amazon Linux 2
+sudo yum install -y git-lfs
+
+# Step 5: Verify Installation
+echo "Git LFS installed successfully."
+
 
 # Install Weights & Biases library
 pip install wandb
