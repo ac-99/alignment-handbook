@@ -4,6 +4,10 @@
 
 # Setup Environment
 
+# Create and activate virtual environment
+python3 -m venv gemma-2b-fine-tune
+source myenv/bin/activate
+
 # Install specific version of Torch
 pip3 install torch==2.1.2
 
