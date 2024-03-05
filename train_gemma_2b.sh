@@ -41,6 +41,9 @@ echo "git-lfs installation completed."
 # Install Weights & Biases library
 pip install wandb
 
+# Install specific version of Torch
+pip3 install torch==2.1.2
+
 # Set environment variables
 export PYTORCH_CUDA_ALLOC_CONF="max_split_size_mb:256"
 export WANDB_DISABLED="false"
